@@ -5,9 +5,9 @@ import (
 )
 
 func main(){
-  i := 0
-  for i < 5 {
-    fmt.Println(i)
-    i++
+  arr := []string{"a", "b", "c"}
+
+  for index, value := range arr {
+    fmt.Println("index:", index, "value:", value)
   }
 }
