@@ -14,7 +14,7 @@ func foo() {
 }
 
 func bar() {
-	for i := 0; i < 10000; i++ {
+	for i := 0; i < 1000; i++ {
 		fmt.Println("Bar:", i)
 	}
 }
