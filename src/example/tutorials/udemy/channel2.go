@@ -20,3 +20,16 @@ func incrementor() <-chan int {
 	}()
 	return out
 }
+
+func puller(c <-chan int) <-chan int {
+	out := make(chan int)
+	go func() {
+		var sum int
+		for n := range c {
+			sum += n
+		}
+		out <- sum
+		close(out)
+	}()
+	return out
+}
