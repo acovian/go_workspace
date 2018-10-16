@@ -26,7 +26,7 @@ func puller(c <-chan int) <-chan int {
 	go func() {
 		var sum int
 		for n := range c {
-
+			sum += n
 		}
 		out <- sum
 		close(out)
