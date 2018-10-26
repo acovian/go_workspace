@@ -3,11 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	yourAge := 18
-
-	if yourAge >= 16 {
-		fmt.Println("You Can Drive")
-	} else {
-		fmt.Println("You Can't Drive")
+	favNums3 := [5]float64{1, 2, 3, 4, 5}
+	for _, value := range favNums3 {
+		fmt.Println(value)
 	}
 }
