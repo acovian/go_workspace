@@ -3,8 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	favNums3 := [5]float64{1, 2, 3, 4, 5}
-	for _, value := range favNums3 {
-		fmt.Println(value)
-	}
+	rect1 := Rectangle{0, 50, 10, 10}
+
+	fmt.Println("Rectangle is", rect1.width, "wide")
+}
+
+type Rectangle struct {
+	leftX  float64
+	topY   float64
+	height float64
+	width  float64
+}
+
+func (rect *Rectangle) area() float64 {
+	return rect.width * rect.height
 }
