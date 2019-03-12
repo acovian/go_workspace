@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			background-image: linear-gradient(purple, orange);
+			height: 100vh;
+		}
+		h1{
+			color: white;
+		}
+	</style>
+	<body>
+		<h1>
+			{{range .}}
+				{{.Name}} <br> {{.Color}} <br>
+			{{end}}
+		</h1>
+		<img src="file:///Users/alejandrocovian/go_workspace/src/beginagain/webdevelopment/tutorials/golang_web_app_tutorial/toadsworth.jpg" alt="">
+	</body>
+</html>
