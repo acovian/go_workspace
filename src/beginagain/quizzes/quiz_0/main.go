@@ -17,12 +17,12 @@ func main() {
 	}
 }
 
-// reader := bufio.NewReader(os.Stdin)
-// fmt.Print("What is another intelligent species on Earth?> ")
-// input, _ := reader.ReadString('\n')
-// if strings.TrimRight(strings.ToLower(input), "\n") == "cachalot" {
-// 	fmt.Println("Correct.")
-// } else {
-// 	fmt.Println("What? Try again.")
-// }
-// }
+reader := bufio.NewReader(os.Stdin)
+fmt.Print("What is another intelligent species on Earth?> ")
+input, _ := reader.ReadString('\n')
+if strings.TrimRight(strings.ToLower(input), "\n") == "cachalot" {
+	fmt.Println("Correct.")
+} else {
+	fmt.Println("What? Try again.")
+}
+}
